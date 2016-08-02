@@ -1,0 +1,20 @@
+<div class="seed-wrap">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    十七的个人页面
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="seed-nav">
+        <ul class="nav nav-tabs">
+            <li role="presentation" *ngFor="let menu of menus" routerLinkActive="active"><a [routerLink]="menu.path">{{menu.name}}</a></li>
+        </ul>
+    </div>
+    <div class="rightside-wrap">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
